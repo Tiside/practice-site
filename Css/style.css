@@ -1,0 +1,1506 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Serif", Sans-serif;
+}
+
+:root{
+    --e-global-color-primary: #000000;
+    --e-global-color-secondary: #000000;
+    --e-global-color-text: #000000;
+    --e-global-color-accent: #000000;
+    --e-global-color-921a232: #FFBE29;
+    --e-global-color-6394363: #49008D;
+    --e-global-color-b991ee9: #F88F43;
+    --e-global-color-855768b: #D3E37D;
+    --e-global-color-94358f0: #C8A3FF;
+    --white: #FFFFFF;
+}
+
+.menu{
+    background-image: url(https://adventurerealms.pl/wp-content/uploads/2023/02/header-background3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px 0px 50px 0px;
+    z-index: 999;
+    position: relative;
+}
+.menu .navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 80px;
+}
+
+.menu .navigation .menu-img img{
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+}
+
+.menu .navigation .menu-nav nav ul{
+    list-style-type: none;
+    display: flex;
+    column-gap: 40px;
+}
+
+.menu-nav.active {
+    display: block; 
+    max-height: 400px;
+}
+
+.menu .navigation .menu-nav nav ul li a{
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.menu .navigation .menu-nav nav ul li a:hover{
+    color: var(--e-global-color-b991ee9);
+}
+
+.menu .navigation .menu-icons{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.menu .navigation .menu-icons a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu .navigation .menu-icons img{
+    width: 40px;
+    height: auto;
+}
+
+.menu .navigation .hamburger i{
+    font-size: 40px;
+    color: var(--white);
+    display: none;
+}
+
+header{
+    background-color: var(--e-global-color-921a232);
+    padding: 20px;
+    z-index: 10;
+    margin-top: -60px;
+}
+header .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 80px;
+    position: relative;
+}
+
+header .content .content-text h1{
+    font-family: "Girassol", Sans-serif;
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 120px;
+    text-transform: uppercase;
+    
+}
+
+header .content .content-text{
+    margin: 0px 0px 0px 0px;
+    padding: 40px 0px 0px 20px;
+    background-image: url(https://adventurerealms.pl/wp-content/uploads/2023/03/Path-2.svg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 55% auto;
+}
+
+header .content .content-img{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+header .content .content-img p{
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    z-index: 111;
+    color: #49008D;
+    font-family: "Girassol", Sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header .content .content-img img:nth-of-type(1){
+    width: 47%;
+    height: auto;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+header .content .content-img img:nth-of-type(2){
+    width: 700px;
+    height: auto;
+    z-index: 100;
+}
+
+.top-btn{
+    background-color: #046bd2;
+    border-radius: 2px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    position: fixed;
+    right: 2%;
+    top: 95%;
+    cursor: pointer;
+    display: none;
+}
+.top-btn a{
+    text-decoration: none;
+    color: white;
+}
+.top-btn.show {
+    display: flex; 
+}
+.top-btn i{
+    font-size: 30px;
+}
+
+.about .content {
+    display: flex;
+    justify-content: space-between; 
+    background-color: var(--e-global-color-6394363);
+    margin-top: -130px;
+    z-index: -1;
+}
+
+.pop svg{
+    width: calc(100% + 1.3px);
+    height: 88px;
+    transform: translateX(-50%) rotateY(180deg);
+    display: block; 
+    position: relative; 
+    margin-top: -90px;
+    margin-bottom: 50px;
+    transform: translateX(-50%);
+    transform: scaleX(-1);
+}
+path{
+    fill: var(--e-global-color-921a232);
+    
+}
+
+.about .content .content-text {
+    background-color: var(--e-global-color-6394363);
+    background-image: url(https://adventurerealms.pl/wp-content/uploads/2023/03/Photo-1.png);
+    background-position: center left;
+    background-position-x: left;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 880px;
+    width: 50%; 
+    padding: 20px;
+   
+
+}
+.about .content .content-text p{
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.about .content .second-content-text {
+    width: 50%; 
+    padding: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about .content .second-content-text h2 {
+    color: var(--e-global-color-94358f0);
+    line-height: 1.25em;
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.about .content .second-content-text p {
+    color: var(--white);
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: left; 
+    width: 65%;
+}
+
+.about .content .second-content-text .content-btn{
+    background-color: #A060FF;
+    clip-path: polygon(0 0, 100% 1%, 84% 81%, 16% 100%);
+    padding: 30px 120px;
+    text-align: center;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+.about .content .second-content-text .content-btn .btn{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 20px;
+}
+
+.about .content .second-content-text .content-btn:hover{
+    background-color: var(--e-global-color-94358f0);
+}
+.feedback{
+    margin-bottom: 200px;
+    z-index: 1;
+    position: relative;
+    
+}
+.feedback .content{
+    background-image: url(https://adventurerealms.pl/wp-content/uploads/2023/03/tlo-pom.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 0px 200px 0px;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+}
+
+.feedback .content .content-feedback{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    flex: 1;
+}
+.feedback .content .content-feedback .first-feedback, .third-feedback{
+    display: flex;
+    justify-content: center;
+}
+
+.feedback .content .content-feedback .feed{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 55px 55px 55px 55px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.feedback .content .content-feedback .first-feedback .feed:nth-of-type(1){
+    background-image: url(https://adventurerealms.pl/wp-content/uploads/2023/03/Group-137.svg);
+}
+.feedback .content .content-feedback .first-feedback .feed:nth-of-type(2){
+    background-image: url(https://adventurerealms.pl/wp-content/uploads/2023/03/Group-137-1.svg);
+}
+.feedback .content .content-feedback .feed p{
+    color: var(--e-global-color-6394363);
+    width: 60%;
+}
+
+
+.feedback .content .content-feedback .second-feedback .feed{
+    background-image: url(https://adventurerealms.pl/wp-content/uploads/2023/03/Group-137-2.svg);
+}
+.feedback .content .content-feedback .second-feedback .feed p{
+    color: var(--e-global-color-6394363);
+    width: 30%;
+}
+
+.feedback .content .content-feedback .third-feedback .feed:nth-of-type(1){
+    background-image: url(https://adventurerealms.pl/wp-content/uploads/2023/03/Group-136.svg);
+}
+.feedback .content .content-feedback .third-feedback .feed:nth-of-type(2){
+    background-image: url(https://adventurerealms.pl/wp-content/uploads/2023/03/Group-136-1.svg);
+}
+
+.feedback .content .content-text-img h2{
+    color: var(--e-global-color-6394363);
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    line-height: 1.25em;
+    display: flex;
+    justify-content: center;
+    text-align: end;
+    margin-top: 40px;
+}
+
+
+.feedback .content .content-text-img {
+    flex-shrink: 0; 
+}
+.feedback .content .content-text-img .back-img{
+    background-image: url(https://adventurerealms.pl/wp-content/uploads/2023/03/gdzietedzieci2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 400px 55px 120px 600px; 
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.feedback .content .content-text-img .back-img p{
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: -80px;
+}
+.partners-container{
+    position: relative;
+}
+.partners-container .super-img{
+    position: absolute;
+    top: -10%;
+    right: 0;
+    z-index: 100;
+}
+
+.partners {
+    background-image: url(https://adventurerealms.pl/wp-content/uploads/2023/03/tlo-pom-1.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -200px;
+    
+}
+
+.partners h2{
+    color: var(--e-global-color-accent);
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.partners .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    column-gap: 20px;
+    background-color: var(--e-global-color-855768b);  
+    position: relative;
+    padding: 50px 0; 
+    width: 100%; 
+    padding-top: 200px;
+    padding-bottom: 250px;
+    z-index: -1;
+}
+
+
+.partners .content .content-img{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.partners .content img{
+    width: 200px;
+    height: 120px;
+}
+
+footer{
+    background-image: url(https://adventurerealms.pl/wp-content/uploads/2023/03/Mask-Group-27.png);
+    margin-top: -100px;
+    margin-bottom: 0px;
+    padding: 150px 0px 50px 0px;
+}
+
+footer .content{
+    display: flex;
+    justify-content: space-around;
+
+}
+footer .content a{
+    text-decoration: none;
+}
+
+footer .content p{
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+@media (max-width: 1600px) and (min-width: 1400px) {
+
+    .partners{
+        margin-top: -400px;
+    }
+    .about .content .content-text p{
+        margin-top: 250px;
+        margin-left: 50px;
+    }
+    .partners-container .super-img{
+        top: -5%;;
+    }
+    
+    .feedback .content .content-text-img .back-img{
+        background-image: url(https://adventurerealms.pl/wp-content/uploads/2023/03/gdzietedzieci2.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 80% auto;
+        padding: 200px 55px 120px 600px; 
+    }
+}
+
+@media (max-width: 1400px) and (min-width: 1100px) {
+    header .content .content-img p{
+        top: 6%;
+        left: 7%;
+        font-size: 16px;
+    }
+    .menu .navigation .menu-nav nav ul{
+        column-gap: 30px;
+    }
+    header .content .content-text h1{
+        font-size: 80px;
+    }
+    .menu .navigation .menu-icons img{
+        width: 30px;
+        height: auto;
+    }
+    header .content .content-text{
+        background-size: 80% auto;
+    }
+    header .content .content-img img:nth-of-type(2){
+        width: 600px;
+        height: auto;
+        z-index: 100;
+    }
+    .about .content .content-text p{
+        margin-top: 250px;
+        margin-left: 50px;
+    }
+    .partners{
+        margin-top: -400px;
+    }
+    .partners-container .super-img{
+        top: -3%;;
+    }
+    .feedback .content{
+        flex-direction: column;
+        margin-top: -180px;
+    }
+    .feedback .content .content-text-img h2{
+        text-align: center;
+    }
+    .feedback .content .content-feedback .second-feedback .feed p{
+        color: var(--e-global-color-6394363);
+        width: 20%;
+    }
+    .feedback .content .content-text-img .back-img{
+        background-size: 60% auto;
+        padding: 400px 55px 120px 600px; 
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 1000px) {
+    header .content .content-img p{
+        top: 6.5%;
+        left: 6%;
+        font-size: 13.5px;
+    }
+    .menu .navigation{
+        justify-content: space-around;
+    }
+    .menu .navigation .menu-img img{
+        width: 180px;
+    }
+    .menu{
+        padding-bottom: 35px;
+    }
+    .menu-nav {
+        position: absolute; 
+        overflow: hidden;
+        top: 60%; 
+        left: 0;
+        width: 100%;
+        background-color: #1E0040; 
+        transition: all 0.3s ease-in-out;
+        z-index: 1000;
+        max-height: 0;
+        transition: max-height 0.5s ease;
+    }
+    .menu-nav.active {
+        display: block; 
+        max-height: 400px;
+    }
+    .menu .navigation .menu-nav nav ul{
+        flex-direction: column;
+    }
+    .menu .navigation .menu-nav nav ul li {
+        margin-bottom: 15px;
+        padding: 6px 10px;
+        border-bottom: 1px solid white;
+    }
+    .menu .navigation .menu-nav nav ul li:nth-of-type(6) {
+        border: none;
+    }
+    .menu .navigation .hamburger i{
+        display: block;
+    }
+    header .content .content-text h1{
+        font-size: 60px;
+        line-height: 80px;
+    }
+    header .content .content-text{
+        background-size: 80% auto;
+    }
+    header .content .content-img img:nth-of-type(2){
+        width: 500px;
+        height: auto;
+        z-index: 100;
+    }
+    .about .content .content-text {
+        background-color: var(--e-global-color-6394363);
+        background-image: url(https://adventurerealms.pl/wp-content/uploads/2023/03/Photo-1.png);
+        background-position: center left;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        width: 50%; 
+        padding: 40px;
+    }
+    .about .content .content-text p{
+        color: var(--white);
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 250px;
+        margin-left: 50px;
+    }
+    .about .content .second-content-text {
+        width: 60%; 
+        padding: 20px; 
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .feedback .content{
+        flex-direction: column;
+        margin-top: -180px;
+        
+    }
+    .feedback .content .content-text-img h2{
+        text-align: center;
+    }
+    .feedback .content .content-feedback .second-feedback .feed p{
+        color: var(--e-global-color-6394363);
+        width: 20%;
+    }
+    .feedback .content .content-text-img .back-img{
+        background-size: 60% auto;
+        padding: 400px 55px 120px 600px; 
+    }
+    .partners{
+        margin-top: -450px;
+    }
+    .partners-container .super-img{
+        top: -3%;;
+    }
+    .partners .content .content-img{
+        flex-wrap: wrap;
+    }
+    .partners .content img{
+        width: 150px;
+        height: 90px;
+    }
+    .menu-nav.active {
+        display: block; 
+        
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 700px) {
+    header .content .content-img p{
+        top: 6%;
+        left: 6%;
+        font-size: 11.5px;
+        z-index: 100;
+    }
+    .menu .navigation{
+        justify-content: space-around;
+    }
+    .menu .navigation .menu-img img{
+        width: 180px;
+    }
+    .menu{
+        padding-bottom: 35px;
+    }
+    .menu-nav {
+        position: absolute; 
+        overflow: hidden;
+        top: 60%; 
+        left: 0;
+        width: 100%;
+        background-color: #1E0040; 
+        transition: all 0.3s ease-in-out;
+        z-index: 1000;
+        max-height: 0;
+        transition: max-height 0.5s ease;
+    }
+    .menu-nav.active {
+        display: block; 
+        max-height: 400px;
+    }
+    .menu .navigation .menu-nav nav ul{
+        flex-direction: column;
+    }
+    .menu .navigation .menu-nav nav ul li {
+        margin-bottom: 15px;
+        padding: 6px 10px;
+        border-bottom: 1px solid white;
+    }
+    .menu .navigation .menu-nav nav ul li:nth-of-type(6) {
+        border: none;
+    }
+    .menu .navigation .hamburger i{
+        display: block;
+    }
+    header .content .content-text h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    header .content .content-text{
+        background-size: 100% auto;
+    }
+    header .content .content-img img:nth-of-type(2){
+        width: 400px;
+        height: auto;
+        z-index: 100;
+    }
+    .about .content {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+    .about .content .content-text {
+        background-color: var(--e-global-color-6394363);
+        background-image: url(https://adventurerealms.pl/wp-content/uploads/2023/03/Photo-1.png);
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        width: 80%; 
+        padding: 250px;
+    }
+    .about .content .content-text p{
+        color: var(--white);
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: -100px;
+        margin-left: -200px;
+        
+    }
+    .about .content .second-content-text {
+        width: auto; 
+        padding: 20px; 
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        margin-bottom: 50px;
+        padding-bottom: 80px;
+        
+    }
+    .about .content .second-content-text h2 {
+        color: var(--e-global-color-94358f0);
+        line-height: 1.25em;
+        font-size: 35px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        width: 60%;
+        background-color: #49008DAB;
+        position: absolute;
+        top: -300%;
+        right: 20%; 
+        border-radius: 20px;   
+             
+    }
+    .about .content .second-content-text p:nth-of-type(1) {
+        color: var(--white);
+        font-size: 20px;
+        text-align: left; 
+        width: 65%;
+        position: absolute;
+        top: -220%;
+        right: 20%; 
+        border-radius: 5px; 
+        background-color: #49008DAB;
+        padding: 20px 10px;
+    }
+    .about .content .second-content-text .content-btn{
+        text-decoration: none;
+        color: var(--white);
+        font-size: 20px;
+        margin-top: -60px;
+    }
+    .feedback .content{
+        flex-direction: column;
+        margin-top: -220px;
+        
+    }
+    .feedback .content .content-text-img h2{
+        text-align: center;
+    }
+    .feedback .content .content-feedback .second-feedback .feed p{
+        color: var(--e-global-color-6394363);
+        width: 20%;
+    }
+    .feedback .content .content-text-img .back-img{
+        background-size: 80% auto;
+        padding: 400px 55px 120px 600px; 
+    }
+    .feedback .content .content-text-img .back-img p{
+        color: var(--white);
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: -90px;
+        display: none;
+    }
+    .partners{
+        margin-top: -450px;
+    }
+    .partners-container .super-img{
+        top: -3%;;
+    }
+    .partners .content .content-img{
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+    }
+    .partners .content .content-img img{
+        margin-bottom: 20px;
+        
+    }
+    .partners .content img{
+        width: 150px;
+        height: 90px;
+    }
+    .menu-nav.active {
+        display: block; 
+        
+    }
+    footer .content{
+        flex-direction: column;
+    }
+    footer .content p{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 700px) and (min-width: 500px) {
+    header .content .content-img p{
+        top: 7%;
+        left: 7%;
+        font-size: 13.5px;
+        z-index: 100;
+    }
+    .menu .navigation .hamburger i{
+        font-size: 20px;
+        color: var(--white);
+        width: auto;
+    }
+    .menu .navigation .hamburger {
+        width: auto;
+    }
+    .menu .navigation{
+        justify-content: space-around;
+    }
+    .menu .navigation .menu-img img{
+        width: 180px;
+    }
+    .menu{
+        padding-bottom: 35px;
+    }
+    .menu .navigation .menu-icons img{
+        width: 30px;
+    }
+    .menu-nav {
+        position: absolute; 
+        overflow: hidden;
+        top: 60%; 
+        left: 0;
+        width: 100%;
+        background-color: #1E0040; 
+        transition: all 0.3s ease-in-out;
+        z-index: 1000;
+        max-height: 0;
+        transition: max-height 0.5s ease;
+    }
+    .menu-nav.active {
+        display: block; 
+        max-height: 400px;
+    }
+    .menu .navigation .menu-nav nav ul{
+        flex-direction: column;
+    }
+    .menu .navigation .menu-nav nav ul li {
+        margin-bottom: 15px;
+        padding: 6px 10px;
+        border-bottom: 1px solid white;
+    }
+    .menu .navigation .menu-nav nav ul li:nth-of-type(6) {
+        border: none;
+    }
+    .menu .navigation .hamburger i{
+        display: block;
+    }
+    header .content{
+        flex-direction: column;
+    }
+    header .content .content-text h1{
+        font-size: 60px;
+        line-height: 80px;
+    }
+    header .content .content-text{
+        background-size: 90% auto;
+    }
+    header .content .content-img img:nth-of-type(2){
+        width: 500px;
+        height: auto;
+        z-index: 100;
+    }
+    .about .content {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+    .about .content .content-text {
+        background-color: var(--e-global-color-6394363);
+        background-image: url(https://adventurerealms.pl/wp-content/uploads/2023/03/Photo-1.png);
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        width: 80%; 
+        padding: 250px;
+    }
+    .about .content .content-text p{
+        color: var(--white);
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: -100px;
+        margin-left: -200px;
+        
+    }
+    .about .content .second-content-text {
+        width: auto; 
+        padding: 20px; 
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        margin-bottom: 50px;
+        padding-bottom: 80px;
+        
+    }
+    .about .content .second-content-text h2 {
+        color: var(--e-global-color-94358f0);
+        line-height: 1.25em;
+        font-size: 35px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        width: 80%;
+        background-color: #49008DAB;
+        position: absolute;
+        top: -480%;
+        right: 5%; 
+        border-radius: 20px;   
+             
+    }
+    .about .content .second-content-text p:nth-of-type(1) {
+        color: var(--white);
+        font-size: 20px;
+        text-align: left; 
+        width: 80%;
+        position: absolute;
+        top: -350%;
+        right: 5%; 
+        border-radius: 5px; 
+        background-color: #49008DAB;
+        padding: 20px 10px;
+    }
+
+    .about .content .second-content-text .content-btn{
+        text-decoration: none;
+        color: var(--white);
+        font-size: 20px;
+        margin-top: -80px;
+    }
+    .feedback .content{
+        flex-direction: column;
+        margin-top: -220px;
+        
+    }
+    .feedback .content .content-text-img h2{
+        text-align: center;
+    }
+    .feedback .content .content-feedback .second-feedback .feed p{
+        color: var(--e-global-color-6394363);
+        width: 20%;
+    }
+    .feedback .content .content-text-img .back-img{
+        background-size: 100% auto;
+        padding: 300px 55px 100px 300px; 
+        
+    }
+    .feedback .content .content-text-img .back-img p{
+        color: var(--white);
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: -90px;
+        display: none;
+    }
+    .feedback .content .content-feedback .feed{
+        padding: 40px 40px 40px 40px;
+    }
+    .feedback .content .content-text-img h2{
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    .partners-container .super-img{
+        width: 40%;
+        height: auto;
+    }
+    .partners{
+        margin-top: -450px;
+    }
+    .partners-container .super-img{
+        top: -3%;;
+    }
+    .partners .content .content-img{
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+    }
+    .partners .content .content-img img{
+        margin-bottom: 20px;
+        
+    }
+    .partners .content img{
+        width: 150px;
+        height: 90px;
+    }
+    .menu-nav.active {
+        display: block; 
+        
+    }
+    footer .content{
+        flex-direction: column;
+    }
+    footer .content p{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 500px) and (min-width: 400px) {
+    header .content .content-img p{
+        top: -1%;
+        left: 2%;
+        font-size: 13.5px;
+        z-index: 101;
+    }                                                   
+    .menu .navigation .menu-icons img{
+        width: 20px;
+        height: auto;
+    }
+    .menu .navigation .hamburger {
+        width: 10%;
+    }
+    .menu .navigation .hamburger i{
+        font-size: 20px;
+    }
+    .menu .navigation{
+        column-gap: 60px;
+    }
+    .menu .navigation .menu-img img{
+        width: 120px;
+    }
+    .menu{
+        padding-bottom: 35px;
+    }
+    .menu-nav {
+        position: absolute; 
+        overflow: hidden;
+        top: 60%; 
+        left: 0;
+        width: 100%;
+        background-color: #1E0040; 
+        transition: all 0.3s ease-in-out;
+        z-index: 1000;
+        max-height: 0;
+        transition: max-height 0.5s ease;
+    }
+    .menu-nav.active {
+        display: block; 
+        max-height: 400px;
+    }
+    .menu .navigation .menu-nav nav ul{
+        flex-direction: column;
+    }
+    .menu .navigation .menu-nav nav ul li {
+        margin-bottom: 15px;
+        padding: 6px 10px;
+        border-bottom: 1px solid white;
+    }
+    .menu .navigation .menu-nav nav ul li:nth-of-type(6) {
+        border: none;
+    }
+    .menu .navigation .hamburger i{
+        display: block;
+    }
+    header .content{
+        flex-direction: column;
+        align-items: start;
+        margin-top: 40px;
+    }
+    header .content .content-text h1{
+        font-size: 50px;
+        line-height: 70px;
+    }
+    header .content .content-text{
+        background-size: 100% auto;
+    }
+    header .content .content-img img:nth-of-type(2){
+        width: 370px;
+        height: auto;
+        z-index: 100;;
+    }
+    header .content .content-img img:nth-of-type(1){
+        width: 60%;
+        top: -20px;
+        left: -20px;
+        z-index: 100;
+    }
+    header .content .content-img{
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .about .content {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+    .about .content .content-text {
+        background-color: var(--e-global-color-6394363);
+        background-image: url(https://adventurerealms.pl/wp-content/uploads/2023/03/Photo-1.png);
+        background-position: center left;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        width: 80%;
+        height: 400px;
+        
+    }
+    .about .content .content-text p{
+        color: var(--white);
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 60px;
+        margin-left: 10px;
+        
+    }
+    .about .content .second-content-text {
+        width: auto; 
+        padding: 20px; 
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        margin-bottom: 50px;
+
+        
+    }
+    .about .content .second-content-text h2 {
+        color: var(--e-global-color-94358f0);
+        line-height: 1.25em;
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+        background-color: #49008DAB;
+        right: 0; 
+        border-radius: 20px;   
+             
+    }
+    .about .content .second-content-text p:nth-of-type(1) {
+        color: var(--white);
+        font-size: 18px;
+        text-align: left; 
+        width: 100%;
+        right: 0; 
+        border-radius: 5px; 
+        background-color: #49008DAB;
+        padding: 20px 10px;
+    }
+    .about .content .second-content-text .content-btn .btn{
+        text-decoration: none;
+        color: var(--white);
+        font-size: 18px;
+    }
+    .about .content .second-content-text .content-btn{
+        background-color: #A060FF;
+        clip-path: polygon(0 0, 100% 1%, 84% 81%, 16% 100%);
+        padding: 30px 100px;
+        text-align: center;
+        transition: background-color 0.5s ease;
+        cursor: pointer;
+    }
+    .feedback .content{
+        flex-direction: column;
+        margin-top: -220px;
+        
+    }
+    .feedback .content .content-text-img h2{
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .feedback .content .content-feedback .second-feedback .feed p{
+        color: var(--e-global-color-6394363);
+        width: 20%;
+    }
+    .feedback .content .content-text-img .back-img{
+        background-size: 100% auto;
+        padding: 300px 55px 100px 300px; 
+        
+    }
+    .feedback .content .content-text-img .back-img p{
+        color: var(--white);
+        font-size: 17px;
+        font-weight: 400;
+        margin-top: -90px;
+    }
+    .feedback .content .content-feedback .first-feedback, .third-feedback{
+        flex-direction: column;
+    }
+    .feedback .content .content-feedback .feed{
+        padding: 40px 40px 40px 40px;
+    }
+    
+    .feedback .content .content-feedback{
+        margin-top: 10px;
+    }
+    .feedback .content .content-feedback .second-feedback .feed p{
+        
+        width: 40%;
+    }
+    .feedback .content .content-feedback .feed p{
+        color: var(--e-global-color-6394363);
+        width: 60%;
+    }
+    .feedback .content .content-text-img {
+        order: -1; /* Перемещаем этот элемент наверх */
+    }
+    .feedback .content .content-text-img h2{
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    .partners-container .super-img{
+        width: 40%;
+        top: 100%;
+    }
+    .partners{
+        margin-top: -450px;
+    }
+    .partners-container .super-img{
+        top: -3%;;
+    }
+    .partners .content .content-img{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .partners .content .content-img img{
+        margin-bottom: 20px;
+        
+    }
+    .partners .content img{
+        width: 150px;
+        height: 90px;
+    }
+    .menu-nav.active {
+        display: block; 
+        
+    }
+    footer .content{
+        flex-direction: column;
+    }
+    footer .content p{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+@media (max-width: 400px) and (min-width: 300px) {
+    header .content .content-img p{
+        top:-2%;
+        left: 2%;
+        font-size: 11.5px;
+        z-index: 101;
+    } 
+    .menu .navigation .menu-icons img{
+        width: 15px;
+        height: auto;
+    }
+    .menu .navigation .hamburger {
+        width: 10%;
+    }
+    .menu .navigation .hamburger i{
+        font-size: 15px;
+    }
+    .menu .navigation{
+        column-gap: 40px;
+    }
+
+    .menu .navigation .menu-img img{
+        width: 100px;
+    }
+    .menu{
+        padding-bottom: 35px;
+    }
+    .menu-nav {
+        position: absolute; 
+        overflow: hidden;
+        top: 60%; 
+        left: 0;
+        width: 100%;
+        background-color: #1E0040; 
+        transition: all 0.3s ease-in-out;
+        z-index: 1000;
+        max-height: 0;
+        transition: max-height 0.5s ease;
+    }
+    .menu-nav.active {
+        display: block; 
+        max-height: 400px;
+    }
+    .menu .navigation .menu-nav nav ul{
+        flex-direction: column;
+    }
+    .menu .navigation .menu-nav nav ul li {
+        margin-bottom: 15px;
+        padding: 6px 10px;
+        border-bottom: 1px solid white;
+    }
+    .menu-nav.active {
+        display: block; 
+    }
+    .menu .navigation .menu-nav nav ul li:nth-of-type(6) {
+        border: none;
+    }
+    .menu .navigation .hamburger i{
+        display: block;
+    }
+    header .content{
+        flex-direction: column;
+        align-items: start;
+        margin-top: 40px;
+    }
+    header .content .content-text h1{
+        font-size: 45px;
+        line-height: 60px;
+    }
+    header .content .content-text{
+        background-size: 100% auto;
+    }
+    header .content .content-img img:nth-of-type(2){
+        width: 330px;
+        height: auto;
+        z-index: 100;;
+    }
+    header .content .content-img img:nth-of-type(1){
+        width: 60%;
+        top: -20px;
+        left: -20px;
+        z-index: 100;
+    }
+    header .content .content-img{
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .about .content {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+    .about .content .content-text {
+        background-color: var(--e-global-color-6394363);
+        background-image: url(https://adventurerealms.pl/wp-content/uploads/2023/03/Photo-1.png);
+        background-position: center left;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        width: 80%;
+        height: 400px;
+        
+    }
+    .about .content .content-text p{
+        color: var(--white);
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 60px;
+        margin-left: 10px; 
+    }
+    .about .content .second-content-text {
+        width: auto; 
+        padding: 20px; 
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        margin-bottom: 50px;
+
+        
+    }
+    .about .content .second-content-text h2 {
+        color: var(--e-global-color-94358f0);
+        line-height: 1.25em;
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+        background-color: #49008DAB;
+        right: 0; 
+        border-radius: 20px;   
+             
+    }
+    .about .content .second-content-text p:nth-of-type(1) {
+        color: var(--white);
+        font-size: 18px;
+        text-align: left; 
+        width: 100%;
+        right: 0; 
+        border-radius: 5px; 
+        background-color: #49008DAB;
+        padding: 20px 10px;
+    }
+    .about .content .second-content-text .content-btn .btn{
+        text-decoration: none;
+        color: var(--white);
+        font-size: 18px;
+    }
+    .about .content .second-content-text .content-btn{
+        background-color: #A060FF;
+        clip-path: polygon(0 0, 100% 1%, 84% 81%, 16% 100%);
+        padding: 30px 100px;
+        text-align: center;
+        transition: background-color 0.5s ease;
+        cursor: pointer;
+    }
+    .feedback .content{
+        flex-direction: column;
+        margin-top: -220px;
+        
+    }
+    .feedback .content .content-text-img h2{
+        text-align: center;
+    }
+    .feedback .content .content-feedback .second-feedback .feed p{
+        color: var(--e-global-color-6394363);
+        width: 20%;
+    }
+    .feedback .content .content-text-img .back-img{
+        background-size: 100% auto;
+        padding: 300px 55px 100px 100px; 
+        
+    }
+    .feedback .content .content-text-img .back-img p{
+        color: var(--white);
+        font-size: 17px;
+        font-weight: 400;
+        margin-top: -90px;
+        
+    }
+    .feedback .content .content-feedback .first-feedback, .third-feedback{
+        flex-direction: column;
+    }
+    .feedback .content .content-feedback .feed{
+        padding: 40px 40px 40px 40px;
+    }
+    .feedback .content .content-feedback{
+        margin-top: 10px;
+    }
+    .feedback .content .content-feedback .second-feedback .feed p{
+        width: 40%;
+    }
+    .feedback .content .content-feedback .feed p{
+        color: var(--e-global-color-6394363);
+        width: 60%;
+    }
+    .feedback .content .content-text-img {
+        order: -1; /* Перемещаем этот элемент наверх */
+    }
+    .feedback .content .content-text-img h2{
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    .partners-container .super-img{
+        width: 40%;
+        top: 100%;
+    }
+    .partners{
+        margin-top: -450px;
+    }
+    .partners-container .super-img{
+        top: -3%;;
+    }
+    .partners .content .content-img{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .partners .content .content-img img{
+        margin-bottom: 20px;
+        
+    }
+    .partners .content img{
+        width: 150px;
+        height: 90px;
+        
+    }
+    footer .content{
+        flex-direction: column;
+    }
+    footer .content p{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
